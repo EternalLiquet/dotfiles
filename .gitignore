@@ -1,0 +1,81 @@
+# =========================
+# Global junk
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.lock
+
+# =========================
+# Caches & runtime state
+# =========================
+.cache/
+.cache/**
+
+# GTK / desktop runtime noise
+.config/gtk-3.0/bookmarks
+.config/gtk-3.0/servers
+.config/gtk-4.0/servers
+
+# Electron / app caches
+.config/**/Cache/
+.config/**/Code Cache/
+.config/**/GPUCache/
+.config/**/DawnCache/
+.config/**/ShaderCache/
+
+# =========================
+# App state you almost never want
+# =========================
+.config/**/logs/
+.config/**/log/
+.config/**/Crash Reports/
+
+# Wayland / compositor runtime junk
+.config/hyprland/hyprlandd.conf
+.config/hyprland/*.lock
+
+# =========================
+# Secrets & credentials (IMPORTANT)
+# =========================
+*.key
+*.pem
+*.crt
+*.p12
+*.env
+*.env.*
+
+.config/**/secrets*
+.config/**/token*
+.config/**/credentials*
+.config/**/auth*
+
+# SSH & GPG (never commit these)
+.ssh/
+.gnupg/
+
+# =========================
+# Language / tool-specific
+# =========================
+# Node
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Java / Kotlin
+.gradle/
+build/
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
